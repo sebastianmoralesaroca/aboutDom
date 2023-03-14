@@ -1,0 +1,22 @@
+{
+  "name": "aboutdom",
+  "version": "1.0.0",
+  "description": "Dom modificable with upper item",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianmoralesaroca/aboutDom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebastianmoralesaroca/aboutDom/issues"
+  },
+  "homepage": "https://github.com/sebastianmoralesaroca/aboutDom#readme",
+  "dependencies": {
+    "less": "^4.1.3"
+  }
+}

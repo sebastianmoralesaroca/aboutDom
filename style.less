@@ -1,0 +1,137 @@
+/*variables*/
+@small-xs: 200px;
+@small: 575px;
+@medium: 990px;
+@tall: 1200px;
+
+body {
+background-color:  #ecf0f1 ;
+}
+
+.containerTitle {
+    text-align: center ;
+    width: 80% ;
+    margin: auto ;
+    margin-top: 70px ;
+
+    .title {
+        font-family: sans-serif ;
+        font-size: 40px ;
+        font-weight: bold ;
+        color: red ;
+    }
+
+    .textTitle {
+        font-family: sans-serif ;
+        font-size: 17px ;
+        font-weight: normal ;
+        color: grey ;
+    }
+}
+
+.containerPrincipal {
+    width: 90% ;
+    margin: auto ;
+    margin-top: 70px ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-gap: 40px;
+
+    .imgArsenal {
+        grid-column: 1;
+        width: 100% ;
+        border-radius: 10px ;
+    }
+
+    .containerButtons {
+        grid-column: 2 ;
+        background-color: white ;
+        border-radius: 10px;
+
+        .btnDom {
+            border: none;
+            width: 33.5%;
+            height: 50px;
+            background-color: #d5d8dc ;
+            font-family: sans-serif ;
+            font-size: 20px ;
+            font-weight: normal ;
+            color: black ;
+            margin-right: -5px;
+        }
+
+        .btnDom:hover {
+            background-color:#ebf5fb  ;
+            color:#3498db ;
+        }
+
+        #btnAbout1 {
+            background-color: transparent;
+            border-radius: 5px 0px 0px 0px;
+        }
+
+        #btnAbout3 {
+            border-radius: 0px 5px 0px 0px;
+        }
+
+        .subtitle {
+            font-family: sans-serif ;
+            font-size: 20px ;
+            font-weight: bold ;
+            color: black ;
+            width: 85%;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .textInfo {
+            font-family: sans-serif ;
+            font-size: 17px ;
+            font-weight: normal ;
+            color: black ;
+            width: 85% ;
+            margin: auto ;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+// Media Tablet
+@media screen and (min-width: @small) and (max-width: @medium) {
+
+    .containerPrincipal {
+        width: 99% ;
+        margin: auto ;
+        margin-top: 70px ;
+        grid-gap: 10px;
+    }
+
+    .containerButtons {
+        height: 350px ;
+    }
+
+    .imgArsenal {
+        height: 350px ;
+    }
+}
+
+
+// Media Mobile Default
+@media screen and (max-width: @small) and (orientation:portrait) {
+
+    .containerTitle {
+        width: 98% ;
+        margin-top: 40px ;
+    }
+
+    .containerPrincipal {
+        display: block;
+        margin-top: 40px ;
+    }
+
+    .containerButtons {
+        margin-top: 10px ;
+        height: 300px ;
+    }
+}
